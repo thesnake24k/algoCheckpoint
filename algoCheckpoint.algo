@@ -1,0 +1,19 @@
+ALGORITHM algorithm_name
+VAR
+    ch:CHAR;
+    nb,long,voy:INTEGER;
+BEGIN
+    WHILE (ch <> ".") DO
+        write("type a character");
+        read(ch);
+        long:=long + 1;
+        IF ((ch="a") or (ch="e") or (ch="u") or (ch="e") or (ch="o") or (ch="A") or(ch="E") or(ch="U") or(ch=E"") or(ch="O")) THEN
+            voy:= voy+1;
+        ELSE_IF (ch=" ") THEN
+            nb := nb + 1;
+        END_IF
+    END_WHILE
+    write("The length of the sentence is",long)
+    write("The number of words in the sentence",nb)
+    write("The number of vowels in the sentence",voy)
+END
